@@ -10,15 +10,6 @@ var passwordcharacter = {
 }
 
 
-function windowPrompt() {
-  var specialcharacters = confirm("Click OK to confirm including special characters.");
-
-  var number = confirm("Click OK to confirm including numeric characters.");
-
-  var lowercase = confirm("Click OK to confirm including lowercase characters.");
-
-  var uppercase = confirm("CLick OK to confirm including uppercase characters.");
-}
 
 
 
@@ -29,7 +20,7 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
 
-  passwordText.value = pw;
+  passwordText.value = password;
 
 }
 
@@ -53,6 +44,17 @@ function generatePassword() {
   passwordlength = 0;
   passwordcharacter.passwordLength = 0;
   pw = "";
+
+  function windowPrompt() {
+    specialcharacters = confirm("Click OK to confirm including special characters.");
+
+    number = confirm("Click OK to confirm including numeric characters.");
+
+    lowercase = confirm("Click OK to confirm including lowercase characters.");
+
+    uppercase = confirm("CLick OK to confirm including uppercase characters.");
+  }
+
 
 
   var passwordlength = prompt("How many characters would you like your password to contain?");
@@ -96,10 +98,10 @@ function generatePassword() {
             }
 
           }
-
-    return pw;    
-    }
- 
+        
+      
+  }  
+  return pw;  
 }
 
   
