@@ -26,21 +26,7 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 
-GIVEN 我需要一个新的安全密码
-当我点击按钮生成密码时
-然后我会看到一系列密码标准提示
-当提示输入密码条件时
-然后我选择要包含在密码中的条件
-当提示输入密码长度时
-THEN 我选择至少 8 个字符且不超过 128 个字符的长度
-WHEN 询问密码中包含的字符类型
-然后我确认是否包含小写、大写、数字和/或特殊字符
-当我回答每个提示时
-那么我的输入应该被验证并且至少应该选择一种字符类型
-当所有提示都得到回答时
-THEN 生成一个符合所选标准的密码
-密码生成时
-THEN 密码要么显示在警报中，要么写入页面
+
 
 ## Grading Requirements
 
