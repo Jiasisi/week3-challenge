@@ -64,9 +64,9 @@ function generatePassword() {
     } else if (passwordlength > 129) {
       alert("Password length must less than 129 characters");
       return;
-    } {
-        password.length = passwordlength;
-        windowPrompt();
+    } else {
+      windowPrompt();
+      while (passwordcharacter.passwordLength < passwordlength) {
           if (specialcharacters === false && number === false && lowercase === false && uppercase === false) {
             alert("You must confirm at least one character.");
             windowPrompt();
@@ -96,11 +96,11 @@ function generatePassword() {
               pw = pw + uppercasePassword;
               passwordcharacter.passwordLength++;
             }
-
           }
+         }
         
       
-  }  
+    }  
   return pw;  
 }
 
